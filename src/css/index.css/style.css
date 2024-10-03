@@ -6,6 +6,7 @@ body {
 
 .cabecalho {
     background-color: aquamarine;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,7 +21,7 @@ body {
     text-decoration: underline;
     text-align: center;
     line-height: 55px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Raleway", sans-serif;
     transition: 0.3s;
 }
 
@@ -32,4 +33,30 @@ body {
 .cabecalho a:hover .logo {
     color: #00d4ff;
     border: 2px solid #00d4ff;
+}
+
+.menu a {
+    position: relative;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.menu a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.menu a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
 }
