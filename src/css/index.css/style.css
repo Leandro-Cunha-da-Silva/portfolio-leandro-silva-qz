@@ -21,8 +21,13 @@ body {
     text-decoration: underline;
     text-align: center;
     line-height: 55px;
-    font-family: "Raleway", sans-serif;
+    font-family: "Poppins", sans-serif;
     transition: 0.3s;
+}
+
+.cabecalho .menu ul {
+    display: flex;
+    justify-content: space-between;
 }
 
 .cabecalho a h1 img {
