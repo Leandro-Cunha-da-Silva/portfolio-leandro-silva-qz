@@ -2,11 +2,11 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    bbackground: rgb(2,0,36);
+    background: linear-gradient(150deg, rgba(2,0,36,1) 0%, rgba(11,7,7,1) 29%, rgba(9,51,60,1) 100%, rgb(0, 212, 255) 100%);
 }
 
 .cabecalho {
-    background-color: aquamarine;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,6 +41,7 @@ body {
 }
 
 .menu a {
+    color: #fff;
     position: relative;
     font-size: 20px;
     font-weight: 500;
@@ -54,7 +55,7 @@ body {
     bottom: -2px;
     width: 100%;
     height: 3px;
-    background: #fff;
+    background: #00d4ff;
     border-radius: 5px;
     transform-origin: right;
     transform: scaleX(0);
@@ -64,4 +65,70 @@ body {
 .menu a:hover::after {
     transform-origin: left;
     transform: scaleX(1);
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    min-height: calc(100vh - 125px);
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 50%;
+}
+
+.home .informacoes {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    letter-spacing: 2px;
+    padding: 0 15px;
+    max-width: 80%;
+}
+
+.home .informacoes h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.home .informacoes p {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.home .redes-sociais ul {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    padding: 15px;
+}
+
+.home .redes-sociais a i {
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+    font-size: 26px;
+    transition: 0.3s;
+}
+
+.home .redes-sociais a i:hover {
+    color: #00d4ff;
+    border: 1px solid #00d4ff;
+    transform: scale(1.1);
+}
+
+.home .foto-perfil img {
+    width: 450px;
+    border-radius: 50%;
 }
