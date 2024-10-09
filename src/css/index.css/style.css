@@ -72,6 +72,8 @@ body {
     align-items: center;
     gap: 30px;
     min-height: calc(100vh - 125px);
+    justify-content: space-between;
+    padding: 70px;
 }
 
 .conteudo {
