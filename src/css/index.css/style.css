@@ -80,7 +80,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    max-width: 50%;
+    max-width: 100%;
 }
 
 .home .informacoes {
@@ -90,7 +90,7 @@ body {
     gap: 15px;
     letter-spacing: 2px;
     padding: 0 15px;
-    max-width: 80%;
+    max-width: 100%;
 }
 
 .home .informacoes h1 {
@@ -131,6 +131,6 @@ body {
 }
 
 .home .foto-perfil img {
-    width: 450px;
+    width: 200em;
     border-radius: 50%;
 }
