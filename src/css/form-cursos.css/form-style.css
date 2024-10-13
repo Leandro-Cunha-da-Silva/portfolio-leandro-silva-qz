@@ -69,38 +69,25 @@ body {
 
 .home {
     display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 30px;
     min-height: calc(100vh - 125px);
-    justify-content: space-between;
     padding: 70px;
 }
 
 .conteudo {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     gap: 20px;
     max-width: 50%;
 }
 
 .home .informacoes {
     color: #fff;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    letter-spacing: 2px;
-    padding: 0 15px;
-    max-width: 80%;
 }
 
 .home .informacoes h1 {
     font-family: "Poppins", sans-serif;
     font-size: 45px;
-    margin-bottom: 20px;
-}
-
-.home .informacoes p {
-    font-family: "Poppins", sans-serif;
-    font-size: 18px;
     margin-bottom: 20px;
 }

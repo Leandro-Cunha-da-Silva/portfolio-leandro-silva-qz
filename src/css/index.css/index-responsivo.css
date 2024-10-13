@@ -26,6 +26,23 @@
     }
 }
 
+@media (max-width: 730px) {
+    .cabecalho .menu ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home {
+        margin: 15px;
+        padding: 15px;
+    }
+
+    .home .informacoes h1 {
+        text-align: center;
+        font-size: 50px;
+    }
+}
+
 @media (max-width: 682px) {
     .cabecalho .menu ul {
         flex-direction: column;
