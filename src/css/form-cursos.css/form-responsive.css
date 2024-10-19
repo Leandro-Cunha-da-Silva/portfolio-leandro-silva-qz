@@ -26,6 +26,7 @@
     .cabecalho .menu ul {
         flex-direction: column;
         text-align: center;
+        gap: 7px;
     }
     
     .home {

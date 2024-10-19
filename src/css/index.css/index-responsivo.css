@@ -28,8 +28,8 @@
 
 @media (max-width: 730px) {
     .cabecalho .menu ul {
-        flex-direction: column;
         text-align: center;
+        gap: 7px;
     }
 
     .home {
@@ -43,7 +43,7 @@
     }
 }
 
-@media (max-width: 682px) {
+@media (max-width: 712px) {
     .cabecalho .menu ul {
         flex-direction: column;
         text-align: center;
