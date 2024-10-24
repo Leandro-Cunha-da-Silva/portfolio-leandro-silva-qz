@@ -1,24 +1,14 @@
-const abas = document.querySelectorAll(".aba");
+document.querySelectorAll('.cartao').forEach(cartao => {
+    const abas = cartao.querySelectorAll('.aba');
+    const informacoes = cartao.querySelectorAll('.informacao');
 
-abas.forEach(aba => {
-    aba.addEventListener("click", function () {
+    abas.forEach((aba, index) => {
+        aba.addEventListener('click', () => {
+            abas.forEach(aba => aba.classList.remove('selecionado'));
+            informacoes.forEach(informacao => informacao.classList.remove('selecionado'));
 
-        if (aba.classList.contains("selecionado")) {
-            return;
-        };
-
-        const abaSelecionada = document.querySelector(".aba.selecionado");
-
-        abaSelecionada.classList.remove("selecionado");
-
-        aba.classList.add("selecionado");
-
-        const informacaoSelecionada = document.querySelector(".informacao.selecionado");
-        informacaoSelecionada.classList.remove("selecionado");
-
-        const idDoElementoDeInformacoesDaAba = `informacao-${aba.id}`
-
-        const informacaoASerMostrada = document.getElementById(idDoElementoDeInformacoesDaAba);
-        informacaoASerMostrada.classList.add("selecionado");
-    })
-})
+            aba.classList.add('selecionado');
+            informacoes[index].classList.add('selecionado');
+        });
+    });
+});

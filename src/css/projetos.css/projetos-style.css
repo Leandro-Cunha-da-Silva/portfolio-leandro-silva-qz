@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    
     background: rgb(2, 0, 36);
     background: linear-gradient(150deg, rgba(2, 0, 36, 1) 0%, rgba(11, 7, 7, 1) 29%, rgba(9, 51, 60, 1) 100%, rgb(0, 212, 255) 100%);
 }
@@ -11,6 +12,8 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 30px 45px;
+    margin: 0 auto;
+    max-width: 1680px;
 }
 
 .cabecalho .logo {
@@ -69,7 +72,9 @@ body {
 
 .home {
     min-height: calc(100vh - 125px);
-    padding: 70px 0;
+    padding: 0 0 70px 0;
+    margin: 0 auto;
+    max-width: 1480px;
 }
 
 .home .titulo {
@@ -141,6 +146,12 @@ body {
     border-radius: 20px;
 }
 
+.botoes {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
 .projetos .btn-mostrar-mais {
     background: none;
     border: 1px solid #fff;
@@ -160,4 +171,33 @@ body {
 .projetos .btn-mostrar-mais:hover {
     background-color: #488997;
     transition: 0.3s;
+}
+
+.projetos .btn-mostrar-menos {
+    background: none;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    color: #fff;
+    width: 180px;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.projetos .btn-mostrar-menos:hover {
+    background-color: #488997;
+    transition: 0.3s;
+}
+
+.projetos .btn-mostrar-menos.remover {
+    display: none;
+}
+
+.projetos .btn-mostrar-mais.remover {
+    display: none;
 }

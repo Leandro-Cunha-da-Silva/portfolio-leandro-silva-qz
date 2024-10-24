@@ -11,6 +11,8 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 30px 45px;
+    margin: 0 auto;
+    max-width: 1680px;
 }
 
 .cabecalho .logo {
@@ -75,6 +77,8 @@ body {
     min-height: calc(100vh - 125px);
     padding: 70px;
     gap: 30px;
+    margin: 0 auto;
+    max-width: 1480px;
 }
 
 .cartao {
@@ -184,13 +188,13 @@ body {
     background: #63787c;
 }
 
-.informacao .redes-sociais {
+.informacao .links {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.informacao .redes-sociais li a {
+.informacao .links li a {
     color: #fff;
     width: 250px;
     display: block;
@@ -200,10 +204,22 @@ body {
     transition: opacity 0.3s ease-in-out;
 }
 
-.informacao .redes-sociais li a:hover {
+.informacao .links li a:hover {
     opacity: 0.8;
 }
 
-.informacao .redes-sociais .instagram {
+.informacao .links .linkedin {
+    background-color: #0e76a8;
+}
+
+.informacao .links .github {
+    background-color: #171515;
+}
+
+.informacao .links .instagram {
     background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+
+.informacao .links .youtube {
+    background-color: #c4302b;
 }
