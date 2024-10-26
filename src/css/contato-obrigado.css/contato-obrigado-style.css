@@ -93,3 +93,11 @@ body {
     font-size: 45px;
     margin-bottom: 20px;
 }
+
+.home .informacoes h1 {
+    text-align: center;
+}
+
+.home .informacoes h2 {
+    text-align: center;
+}
