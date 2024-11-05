@@ -28,6 +28,7 @@
 
 @media (max-width: 730px) {
     .cabecalho .menu ul {
+        flex-direction: column;
         text-align: center;
         gap: 7px;
     }
