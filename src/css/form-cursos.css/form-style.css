@@ -108,6 +108,11 @@ body {
     cursor: pointer;
 }
 
+.btn-download .simples:hover {
+    background-color: #488997;
+    transition: 0.3s;
+}
+
 .btn-download .btn {
     max-width: 25px;
 }
@@ -126,12 +131,28 @@ body {
     font-weight: 600;
     cursor: pointer;
 }
-.btn-download .simples:hover {
+
+.btn-download .bonito:hover {
     background-color: #488997;
     transition: 0.3s;
 }
 
-.btn-download .bonito:hover {
+.btn-download .english {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: none;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    color: #fff;
+    width: 260px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-download .english:hover {
     background-color: #488997;
     transition: 0.3s;
 }
