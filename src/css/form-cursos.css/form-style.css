@@ -71,19 +71,18 @@ body {
 
 .home {
     display: flex;
+    flex-direction: column;
     min-height: calc(100vh - 125px);
-    margin: 0 auto;
-    max-width: 1480px;
     padding: 20px 70px;
     font-size: 20px;
     color: #fff;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+
+    gap: 150px;
 }
 
-.conteudo .topicos {
-    list-style-type: square;
-    padding: 0 40px;
+.home .conteudo {
+    display: flex;
+    justify-content: space-around;
 }
 
 .btn-download {
@@ -113,46 +112,6 @@ body {
 }
 
 .btn-download .curriculo-portugues:hover {
-    background-color: #488997;
-    transition: 0.3s;
-}
-
-.btn-download .english {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    background: none;
-    border: 1px solid #fff;
-    border-radius: 15px;
-    color: #fff;
-    width: 260px;
-    padding: 10px;
-    font-size: 18px;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-.btn-download .english:hover {
-    background-color: #488997;
-    transition: 0.3s;
-}
-
-.btn-download .carta-apresentacao {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    background: none;
-    border: 1px solid #fff;
-    border-radius: 15px;
-    color: #fff;
-    width: 260px;
-    padding: 10px;
-    font-size: 18px;
-    font-weight: 600;
-    cursor: pointer;
-}
-
-.btn-download .carta-apresentacao:hover {
     background-color: #488997;
     transition: 0.3s;
 }
